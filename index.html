@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>LUXURY</h1>
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars icon-bars"></i>
+        <i class="fa-solid fa-xmark icon-cross"></i>
+      </button>
+      
+
+      <div class="navbar">
+        <ul class="nav-items">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/properties.html">Properties</a></li>
+          <li><a href="/PropDetail.html">Property Details</a></li>
+          <li><a href="/Contact.html">Contact Us</a></li>
+        </ul>
+        <a href="/Contact.html">
+        <button class="home-button">
+          <i class="fa-solid fa-calendar-days" style="color: #ededed"></i>
+          Schedule a visit
+        </button>
+      </a>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="carousel">
+        <div class="inner-carousel">
+          <div class="carousel-item" active>
+            <img src="/banner-01.jpg" alt="home" />
+            <div class="carousel-item-content">
+              <button>Miami, <span>South Florida</span></button>
+              <h2>
+                ACT NOW!
+                <br />
+                GET THE HIGHEST LEVEL
+              </h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/banner-02.jpg" alt="home1" />
+            <div class="carousel-item-content">
+              <button>Toronto, <span>Canada</span></button>
+              <h2>
+                HURRY!
+                <br />
+                GET THE BEST VILLA FOR YOU
+              </h2>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/banner-03.jpg" alt="home3" />
+            <div class="carousel-item-content">
+              <button>Melbourne, <span>Australia</span></button>
+              <h2>
+                BE QUICK!
+                <br />
+                GET THE BEST VILLA
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">
+          <i class="fa-solid fa-chevron-left" style="color: #fcfcfc"></i>
+        </button>
+        <button class="next" onclick="changeSlide(1)">
+          <i class="fa-solid fa-chevron-right" style="color: #fcfcfc"></i>
+        </button>
+
+        <div class="carousel-indicator">
+          <span onclick="jumpToSlide(1)" class="dot active"></span>
+          <span onclick="jumpToSlide(2)" class="dot"></span>
+          <span onclick="jumpToSlide(3)" class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-two">
+      <div class="home-left-side">
+        <aside class="sideimage">
+          <img
+            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9tZSUyMGRlc2lnbmVyfGVufDB8fDB8fHww"
+          />
+        </aside>
+        <div class="sidecontent">
+          <div class="sideheader">
+            <span></span>
+            <h4>Featured</h4>
+          </div>
+          <div class="sidebody">
+            <h2>Best Appartment & Sea View</h2>
+            <div>
+              <p class="link-text">Best useful links</p>
+              <p>
+                Get the best villa website template in HTML CSS and Bootstrap
+                for your business. TemplateMo provides you the best free CSS
+                templates in the world. Please tell your friends about it.
+              </p>
+           <div class="container">
+         
+            <details>
+              <summary><h4>What makes a house a villa?</h4></summary>
+              <div>
+                <p>A villa style house is traditionally a more secluded house, often single-level, designed to be a home for a single family, usually on spacious property that puts it at a distance from other houses </p>
+              </div>
+            </details>
+             <details>
+              <summary><h4>Why is Villa Agency the best ?</h4></summary>
+              <div>
+                <p>Villas are associated with the freedom and flexibility of independent luxury living, but also with all the perks of a gated community. If nothing else, the recent COVID-19 pandemic has taught people the value of owning a spacious home of their own, a source of security that is irrevocable.
+                </p>
+              </div>
+             </details>
+           </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="video-section">
+        <div class="blur-background">
+          <img
+            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900"
+            alt="Blurred Background"
+          />
+          <div class="video-content">
+            <div class="section-heading">
+              <span class="line"></span>
+              <h4>VIDEO VIEW</h4>
+            </div>
+            <h2>Get Closer View &<br />Different Feeling</h2>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="video-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1613545325268-9265e1609167?w=900"
+              alt="Video Thumbnail"
+            />
+            <button class="play-button">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="properties">
+        <div class="property-heading">
+          <span class="line"></span>
+          <h4>PROPERTIES</h4>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-01.jpg"
+              alt="Luxury Villa"
+            />
+            <span class="tag">Luxury Villa</span>
+            <h2>$2.264.000</h2>
+            <p class="address">18 New Street Miami, OR 97219</p>
+            <div class="details">
+              <p>Bedrooms: <strong>8</strong></p>
+              <p>Bathrooms: <strong>8</strong></p>
+              <p>Area: <strong>545m²</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>6 spots</strong></p>
+            </div>
+            <button class="btn">Schedule a visit</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-02.jpg"
+              alt="Luxury Villa"
+            />
+            <span class="tag">Luxury Villa</span>
+            <h2>$1.180.000</h2>
+            <p class="address">54 Mid Street Florida, OR 27001</p>
+            <div class="details">
+              <p>Bedrooms: <strong>6</strong></p>
+              <p>Bathrooms: <strong>5</strong></p>
+              <p>Area: <strong>450m²</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>8 spots</strong></p>
+            </div>
+            <button class="btn">Schedule a visit</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-03.jpg"
+              alt="Luxury Villa"
+            />
+            <span class="tag">Luxury Villa</span>
+            <h2>$1.460.000</h2>
+            <p class="address">26 Old Street Miami, OR 38540</p>
+            <div class="details">
+              <p>Bedrooms: <strong>5</strong></p>
+              <p>Bathrooms: <strong>4</strong></p>
+              <p>Area: <strong>225m²</strong></p>
+              <p>Floor: <strong>3</strong></p>
+              <p>Parking: <strong>10 spots</strong></p>
+            </div>
+            <button class="btn">Schedule a visit</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="property-section">
+        <div class="property-heading">
+          <span class="line"></span>
+          <h4>BEST DEALS</h4>
+        </div>
+
+        <div class="top-section">
+          <h1>Find Your Best Deal Right Now!</h1>
+          <div class="buttons">
+            <button class="active">Apartment</button>
+            <button>Villa House</button>
+            <button>Penthouse</button>
+          </div>
+        </div>
+
+        <div class="bottom-section">
+          <div class="info-card">
+            <p><span>Total Flat Space</span> <strong>185 m²</strong></p>
+            <p><span>Floor number</span> <strong>26th</strong></p>
+            <p><span>Number of rooms</span> <strong>4</strong></p>
+            <p><span>Parking Available</span> <strong>Yes</strong></p>
+            <p><span>Payment Process</span> <strong>Bank</strong></p>
+          </div>
+
+          <div class="property-image">
+            <img
+              src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGx1eHVyeSUyMGhvbWV8ZW58MHx8MHx8fDA%3D"
+              alt="Luxury Apartment"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-heading">
+        <span class="line"></span>
+        <h4>CONTACT US</h4>
+      </div>
+      <section class="contact-container">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.632543258305!2d-80.1234567!3d25.9501234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a5c0b1f12345%3A0xabcdef1234567890!2sSunny%20Isles%20Beach!5e0!3m2!1sen!2sus!4v1673531234567"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+
+        <form class="contact-form">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your Name..." />
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Your E-mail..." />
+
+          <label>Message</label>
+          <textarea placeholder="Your Message..."></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <section class="footer-container">
+        <div class="footer-one">
+          <h1>ABOUT US</h1>
+          <p>
+            Get the best villa agency for your company website. TemplateMo
+            provides you the best free CSS templates in the world. Please tell
+            your friends about it.
+          </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <!-- <div class="footer-two">
+          <h1>RECENT POSTS</h1>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+            />
+            <p>Villa in London</p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
+            />
+            <p>Villa in New York</p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvbWV8ZW58MHx8MHx8fDA%3D"
+            />
+            <p>Villa in Paris</p>
+          </div>
+        </div> -->
+        <div class="footer-three">
+          <h1>UPCOMING EVENTS</h1>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
+            />
+            <p>Luxury Villa Open House Feb 15, 2025</p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1556909172-bd5315ff61a0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvbWUlMjBwYXJ0eXxlbnwwfHwwfHx8MA%3D%3D"
+            />
+            <p>Exclusive Wine Tasting Night Mar 8, 2025</p>
+          </div>
+          <div class="image-content">
+            <img
+              src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQwfHx8ZW58MHx8fHx8"
+            />
+            <p>Private Poolside Dinner Apr 20, 2025</p>
+          </div>
+        </div>
+        <div class="footer-four">
+          <h1>CONTACT US</h1>
+          <div class="contact-content">
+            <i class="fa-solid fa-phone" style="color: #ffffff">
+              <p>+1 (123) 456-7890</p>
+            </i>
+          </div>
+          <div class="contact-content">
+            <i class="fa-solid fa-envelope" style="color: #ffffff">
+              <p>info@example.com</p>
+            </i>
+          </div>
+          <div class="contact-content">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff">
+              <p>123 Luxury Street, Beverly Hills, USA</p>
+            </i>
+          </div>
+        </div>
+     
+      </section>
+      <footer class="copyright-footer">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="/Home.js"></script>
+  </body>
+</html>
